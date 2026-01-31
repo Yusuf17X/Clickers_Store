@@ -1,1 +1,226 @@
-<!DOCTYPE html>\n<html lang='en'>\n<head>\n    <meta charset='UTF-8'>\n    <meta name='viewport' content='width=device-width, initial-scale=1.0'>\n    <link rel='stylesheet' href='styles.css'>\n    <title>Product Listing</title>\n</head>\n<body>\n    <header>\n        <h1>Our Products</h1>\n        <div class='filters'>\n            <h2>Filter by:</h2>\n            <select id='category'>\n                <option value='all'>All Categories</option>\n                <option value='electronics'>Electronics</option>\n                <option value='clothing'>Clothing</option>\n                <option value='home'>Home</option>\n            </select>\n            <button id='apply-filters'>Apply Filters</button>\n        </div>\n    </header>\n    <main>\n        <section class='product-grid'>\n            <article class='product'>\n                <h2>Product Title</h2>\n                <p>Product description goes here.</p>\n                <p>Price: $XX.XX</p>\n                <button>Add to Cart</button>\n            </article>\n            <!-- More products can be added here -->\n        </section>\n        <section class='collection-description'>\n            <h2>About Our Collection</h2>\n            <p>This collection is curated for your needs.</p>\n        </section>\n    </main>\n    <script src='app.js'></script>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clickers Store | Wireless Mice</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="header-left">
+        <a class="logo" href="index.html">Clickers</a>
+      </div>
+      <nav class="header-center">
+        <div class="mega-menu">
+          <button class="menu-toggle" type="button">Shop</button>
+          <div class="mega-panel">
+            <a href="plp.html">Keyboards</a>
+            <a href="plp.html">Mice</a>
+            <a href="plp.html">Desk Mats</a>
+            <a href="plp.html">Accessories</a>
+          </div>
+        </div>
+        <a href="index.html#inspiration">Setup Inspiration</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <div class="header-right">
+        <button class="icon-button" type="button" data-search-toggle aria-label="Search">
+          <span>🔍</span>
+        </button>
+        <button class="icon-button" type="button" aria-label="Account">
+          <span>👤</span>
+        </button>
+        <button class="icon-button" type="button" data-cart-toggle aria-label="Cart">
+          <span>🛒</span>
+        </button>
+      </div>
+      <div class="search-drawer" data-search-drawer>
+        <input type="text" placeholder="Search products" id="searchInput" />
+        <div class="search-results" id="searchResults">Start typing to search...</div>
+      </div>
+    </header>
+
+    <aside class="cart-drawer" data-cart-drawer>
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="icon-button" type="button" data-cart-toggle>✕</button>
+      </div>
+      <div class="cart-body">
+        <p>2 items in cart</p>
+        <div class="progress">
+          <div class="progress-bar" style="width: 70%">Free Shipping 70%</div>
+        </div>
+        <div class="cart-item">
+          <span>Pulse Wireless Mouse</span>
+          <span>$129</span>
+        </div>
+        <div class="cart-item">
+          <span>Glide Desk Mat</span>
+          <span>$49</span>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <strong>$178</strong>
+        </div>
+        <button class="primary-button" type="button">Checkout</button>
+      </div>
+    </aside>
+
+    <main class="plp">
+      <section class="plp-header">
+        <div>
+          <h1>Wireless Mice</h1>
+          <p>Precision tracking built for competitive play.</p>
+        </div>
+        <select class="sort-dropdown">
+          <option>Sort: Best Selling</option>
+          <option>Price: Low-High</option>
+          <option>Price: High-Low</option>
+        </select>
+      </section>
+
+      <div class="plp-grid">
+        <aside class="filters">
+          <h3>Filters</h3>
+          <div class="filter-group">
+            <h4>DPI</h4>
+            <label><input type="checkbox" /> 16K+</label>
+            <label><input type="checkbox" /> 8K-16K</label>
+            <label><input type="checkbox" /> 4K-8K</label>
+          </div>
+          <div class="filter-group">
+            <h4>Weight</h4>
+            <label><input type="checkbox" /> Under 60g</label>
+            <label><input type="checkbox" /> 60g - 80g</label>
+          </div>
+          <div class="filter-group">
+            <h4>Sensor</h4>
+            <label><input type="checkbox" /> Focus Pro</label>
+            <label><input type="checkbox" /> Hero 2</label>
+          </div>
+          <div class="filter-group">
+            <h4>Shape</h4>
+            <label><input type="checkbox" /> Ergonomic</label>
+            <label><input type="checkbox" /> Ambidextrous</label>
+          </div>
+        </aside>
+
+        <section class="product-grid">
+          <article class="product-card badge-new">
+            <div class="product-image">Pulse Wireless</div>
+            <div class="product-details">
+              <h3>Pulse Wireless</h3>
+              <p>4.8 ★★★★☆</p>
+              <p>$129</p>
+              <div class="swatches">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card badge-sale">
+            <div class="product-image">Vector Pro</div>
+            <div class="product-details">
+              <h3>Vector Pro</h3>
+              <p>4.6 ★★★★☆</p>
+              <p>$99</p>
+              <div class="swatches">
+                <span></span><span></span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card badge-sold">
+            <div class="product-image">Drift Air</div>
+            <div class="product-details">
+              <h3>Drift Air</h3>
+              <p>4.9 ★★★★★</p>
+              <p>$149</p>
+              <div class="swatches">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">Orbit Mini</div>
+            <div class="product-details">
+              <h3>Orbit Mini</h3>
+              <p>4.4 ★★★★☆</p>
+              <p>$89</p>
+              <div class="swatches">
+                <span></span><span></span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">Signal Pro</div>
+            <div class="product-details">
+              <h3>Signal Pro</h3>
+              <p>4.7 ★★★★☆</p>
+              <p>$139</p>
+              <div class="swatches">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-image">Arc Swift</div>
+            <div class="product-details">
+              <h3>Arc Swift</h3>
+              <p>4.5 ★★★★☆</p>
+              <p>$109</p>
+              <div class="swatches">
+                <span></span><span></span>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <section class="collection-description">
+        <h2>Wireless Mice Built For Performance</h2>
+        <p>
+          Our wireless mouse lineup is curated for competitive gamers and creators who need
+          ultra-responsive tracking, featherweight builds, and all-day battery life.
+          Explore ergonomic and ambidextrous silhouettes, premium switches, and vibrant colorways.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <h4>Quick Links</h4>
+          <a href="support.html">Returns</a>
+          <a href="support.html">FAQs</a>
+          <a href="support.html">Driver Downloads</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="https://discord.com" target="_blank" rel="noreferrer">Discord</a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://tiktok.com" target="_blank" rel="noreferrer">TikTok</a>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p>Get 10% off your first setup.</p>
+          <div class="newsletter">
+            <input type="email" placeholder="Email address" />
+            <button class="primary-button" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Visa • Mastercard • PayPal • Apple Pay</span>
+        <span>© 2026 Clickers Store</span>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
